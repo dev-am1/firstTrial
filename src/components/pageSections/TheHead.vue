@@ -5,12 +5,12 @@
         <the-button>CTA</the-button>
         <div class="flex -mr-10 2xl:-mr-24 2xl:ml-40 ">
           <ul class="flex my-2 sm:my-4 md:my-8 lg:my-10 xl:my-12 flex-shrink xl:flex-grow-0 items-start">
-            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl">منو شماره1</li>
-            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl">منو شماره 2</li>
-            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl">منو شماره 3</li>
-            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl">منو شماره 4</li>
-            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl">منو شماره 5</li>
-            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl">فوتر</li>
+            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><a href="#menu1">منو شماره 1</a></li>
+            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><a href="#menu2">منو شماره 2</a></li>
+            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><a href="#menu3">منو شماره 3</a></li>
+            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><a href="#menu4">منو شماره 4</a></li>
+            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><a href="#menu5">منو شماره 5</a></li>
+            <li class="cu1 pl-2 sm:pr-2 md:pr-4 text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><a href="#footer">فوتر</a></li>
           </ul>
         </div>
         <div class="logo">

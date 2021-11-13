@@ -1,10 +1,10 @@
 <template>
-<div class="wrap">
+<div class="wrap mt-98 sm:mt-4"  id="menu3">
     <div class="flex justify-evenly">
         <div class="text-right">
       <p class="font-black text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl title">منو شماره 3</p>
             <p class="title">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است</p>
-            <button class="btn border-2 border-gray-500">بیشتر بدانیم</button>
+            <button class="btn border-2 border-gray-500 text-s6 md:text-base xl:text-xl" >بیشتر بدانیم</button>
         </div>
         <img src="../../assets/icons/cube.png" class="cbe absolute right-0">
         <div>

@@ -5,7 +5,7 @@
       <div class="text-center font-black text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-white justify-self-center title">منو شماره 2</div>
       <img class="side" src="../../assets/icons/Frame-ls.png" alt="">
       </div>
-      <div class="slider w-7/12 h-3/6 2xl:w-full  sm:w-7/12 sm:h-2/6 md:w-8/12 md:h-3/6 lg:w-9/12 lg:h-4/6 xl:w-10/12 xl:h-5/6 mx-auto">
+      <div class="slider w-7/12 h-1/6 2xl:w-full  sm:w-7/12 sm:h-1/6 md:w-7/12 md:h-1/6 lg:w-9/12 lg:h-4/6 xl:w-10/12 xl:h-5/6 mx-auto">
       <carousel :autoplay="true" :display="3" :controls-visible="true" :classes="`flex justify-between`">
         <slide v-for="(slide, i) in slides" :index="i" :key="i">
           <figure>
@@ -34,15 +34,6 @@ export default {
   },
   data() {
     return {
-      slides:[
-        {desc : "توضیحات مختصر مربوط به عکس بالا",
-        src: "img/slide1.png"
-        },{desc : "توضیحات مختصر مربوط به عکس بالا",
-        src: "img/slide2.png"
-        },{desc : 'توضیحات مختصر مربوط به عکس بالا',
-        src: "img/slide3.png"
-        },
-      ],
       visibleSlide: 0,
     }
   },
@@ -50,6 +41,11 @@ export default {
     getImgUrl: function (imagePath) {
       return require('@/assets/' + imagePath);
     },
+  },
+  computed: {
+    slides(){
+      return this.$store.getters['carousel/slides2'];
+    }
   },
 }
 </script>

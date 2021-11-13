@@ -1,4 +1,5 @@
 <template>
+<div class="top">
 <p class="font-black text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center title">منوی شماره 5</p>
   <form class="bg-white rounded px-8 pt-6 pb-8 mb-4 mx-auto">
       <div class="flex mb-4 w-9/12 mx-auto">
@@ -29,9 +30,9 @@
     <div class="flex float-left btn">
     <the-button>CTA</the-button>
     </div>
-
     </div>
   </form>
+</div>
 </template>
 <script>
 import TheButton from "../ui/TheButton.vue";
@@ -42,6 +43,9 @@ export default {
 };
 </script>
 <style scoped>
+.top{
+  top: 28em;
+}
 *{
     font-family: 'Vazir';
 }

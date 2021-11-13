@@ -1,46 +1,47 @@
 <template>
         <div class="mx-8 wrap">
     <div class="container flex justify-center items-center content-center mx-auto my-8"  >
-        <div class="blueC square">
-      <h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-center font-bold p-4">
-        ویژگی دوم
+          <span v-for="card in cards" :key="card.id">
+        <div class="blueC square" v-if="cards.id == 1">
+      <h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-center font-bold p-4" >
+       {{cards.spec}}
       </h1>
         <p class="text-s4 sm:text-xs md:text-xs lg:text-sm xl:text-sm 2xl:text-2xl p-4">
-        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-        از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-        سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
-        متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+        {{ cards.desc }}
       </p>
         </div>
-        <div class="redC square">
+        <div class="redC square" v-if="cards.id == 2">
       <h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-center font-bold p-4">
-        ویژگی اول
+        {{ cards.spec }}
       </h1>
        <p class="text-s4 sm:text-xs md:text-xs lg:text-sm xl:text-sm 2xl:text-2xl p-4">
-        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-        از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-        سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
-        متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+{{ cards.desc }}
       </p>
         </div>
-        <div class="blueC square">
+        <div class="blueC square " v-if="cards.id == 3">
       <h1 class="text-white text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl text-center font-bold p-4">
-        ویژگی سوم
+       {{cards.spec}}
       </h1>
        <p class="text-s4 sm:text-xs md:text-xs lg:text-sm xl:text-sm 2xl:text-2xl p-4">
-
-        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده
-        از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و
-        سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای
-        متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+         {{ cards.desc }}
       </p>
         </div>
+          </span>
     </div>
         </div>
       <div class="absolute top-2/4 left-0 w-4 sm:w-5 md:w-6 lg:w-7 xl:w-8 flex-shrink">
   <img src="../../assets/icons/Frame.png" alt="">
   </div>
 </template>
+<script>
+export default {
+  computed: {
+    cards(){
+      return this.$store.getters['cards/cards'];
+    }
+  },
+}
+</script>
 <style scoped>
 .wrap{
   margin-top: 6vw;

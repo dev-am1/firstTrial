@@ -39,21 +39,6 @@ export default {
     },
     data() {
         return {
-            slides:[
-                {src:'img/sec4-1.png',
-                desc: 'توضیحات مختصر در رابطه با تصویر بالا'},                
-                {src:'img/sec4-2.png',
-                desc: 'توضیحات مختصر در رابطه با تصویر بالا'},                
-                {src:'img/sec4-3.png',
-                desc: 'توضیحات مختصر در رابطه با تصویر بالا'},                
-                {src:'img/sec4-4.png',
-                desc: 'توضیحات مختصر در رابطه با تصویر بالا'},                
-                {src:'img/sec4-5.png',
-                desc: 'توضیحات مختصر در رابطه با تصویر بالا'},                
-                {src:'img/sec4-6.png',
-                desc: 'توضیحات مختصر در رابطه با تصویر بالا'},
-
-            ],
             current:0,
         }
     },
@@ -79,6 +64,11 @@ export default {
         this.current = n;
     },
     }, 
+    computed: {
+        slides(){
+            return this.$store.getters['carousel/slides4']
+        }
+    },
 }
 
 </script>

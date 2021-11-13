@@ -1,5 +1,5 @@
 <template>
-<div class="cont p-10 w-full">
+<div class="cont p-10 w-full" id="footer">
     <div class="flex justify-around mb-4">
   <div class="w-2/4 h-auto">
       <div class="font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">LOGO</div>
@@ -19,15 +19,14 @@
 
   </div>
   <div class="w-1/4 flex-col h-auto sm:mt-0 mt-8">
+<button><a href="#menu1" class="border-2 border-white p-2 md:p-4 absolute left-0 text-s5 md:text-base">بازگشت به بالا ^</a></button>
       <div class="pers text-white text-lg font-semibold mb-2">تماس با ما</div>
       <ul class="list-reset leading-normal">
-          <li class="hover:text-green-dark contac text-grey-darker text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><img class="inline m-2" src="../../assets/icons/Location.png">تهران، پاسداران، خیابان نجفی، کوچه اقاقیا، پلاک 2 واحد 11</li>
+          <li class="hover:text-green-dark contac text-grey-darker text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><img class="inline m-2" src="../../assets/icons/Location.png">تهران، پاسداران، خیابان نجفی،<br> کوچه اقاقیا، پلاک 2 واحد 11</li>
           <li class="hover:text-green-dark contac text-grey-darker text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><img class="inline m-2" src="../../assets/icons/phone.png" alt="">(+98)2222222222 </li>
           <li class="hover:text-green-dark contac text-grey-darker text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><img class="inline m-2" src="../../assets/icons/printer.png" alt="">(+98)2222222222 </li>
           <li class="hover:text-green-dark contac text-grey-darker text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><img class="inline m-2" src="../../assets/icons/Message.png" alt="">info@peak-elevator.com </li>
       </ul>
-
-    <div class="text-green-light mb-2 mt-4">Green-light</div>
       <ul class="flex flex-row">
     <div class="mx-2 my-2 w-10 soci text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><img src="../../assets/icons/ins.png" alt="" /></div>
     <div class="mx-2 my-2 w-10 soci text-s3 sm:text-s6 md:text-sm lg:text-lg xl:text-2xl"><img src="../../assets/icons/fac.png" alt="" /></div>
